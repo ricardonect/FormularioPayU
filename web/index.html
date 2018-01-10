@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prueba PayU</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1 class="text-center">Formulario de prueba</h1>
+        <div class="container container-fluid ">
+            <hr>
+            <form class="form-group" action="https://sandbox.gateway.payulatam.com/ppp-web-gateway" method="post">
+                <div class="form-group row">
+                    <label for="example-number-input" class="col-2 col-form-label">merchantId</label>
+                    <div class="col-10">
+                        <input class="form-control" type="number" value="508029" name="merchantId">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-2 col-form-label">ApiKey</label>
+                    <div class="col-10">
+                        <input class="form-control" type="text" value="4Vj8eK4rloUd272L48hsrarnUA" name="ApiKey">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-2 col-form-label">referenceCode</label>
+                    <div class="col-10">
+                        <input class="form-control" type="text" value="tushco1" name="referenceCode">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-number-input" class="col-2 col-form-label">accountId</label>
+                    <div class="col-10">
+                        <input class="form-control" type="number" value="512326" name="accountId">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-2 col-form-label">description</label>
+                    <div class="col-10">
+                        <input class="form-control" type="text" value="TestPayU" name="description">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-number-input" class="col-2 col-form-label">amount</label>
+                    <div class="col-10">
+                        <input class="form-control" type="number" value="3" name="amount">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-number-input" class="col-2 col-form-label">tax</label>
+                    <div class="col-10">
+                        <input class="form-control" type="number" value="0" name="tax">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-number-input" class="col-2 col-form-label">taxReturnBase</label>
+                    <div class="col-10">
+                        <input class="form-control" type="number" value="0" name="taxReturnBase">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-2 col-form-label">currency</label>
+                    <div class="col-10">
+                        <input class="form-control" type="text" value="USD" name="currency">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-2 col-form-label">signature</label>
+                    <div class="col-10">
+                        <input class="form-control" type="text" value="0593b77e7d6f0a9585eb250809d080db" name="signature">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-number-input" class="col-2 col-form-label">test</label>
+                    <div class="col-10">
+                        <input class="form-control" type="number" value="1" name="test">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-2 col-form-label">buyerEmail</label>
+                    <div class="col-10">
+                        <input class="form-control" type="text" value="test@test.com" name="buyerEmail">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-sm-2 col-sm-10">
+                        <input type="submit" class="btn btn-primary" value="Enviar">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
